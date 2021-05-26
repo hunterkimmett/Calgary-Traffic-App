@@ -23,7 +23,7 @@ class ParseIncidents:
         :return:
         '''
 
-        with open(csv_in, 'r') as f_in, open('Traffic_Incidents_'+year+'.csv', 'w', newline='') as f_out:
+        with open(csv_in, 'r') as f_in, open('Calgary-Traffic-App/Phase 1 - App/data/Traffic_Incidents_'+year+'.csv', 'w', newline='') as f_out:
 
             # Setting up reader and writer
             reader = csv.reader(f_in)

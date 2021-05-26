@@ -40,7 +40,7 @@ class CreatePlot:
             highest_row = db_in.nlargest(1, ['total'])
             data = highest_row['total']
 
-        return data
+        return int(data)
 
     def plot_data(self, collection, db_1, db_2, db_3, db_type):
         '''

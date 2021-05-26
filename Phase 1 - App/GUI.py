@@ -4,7 +4,7 @@ from pandastable import Table
 from CreatePlot import *
 from CreateMap import *
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-
+import traceback
 
 class GUI:
 

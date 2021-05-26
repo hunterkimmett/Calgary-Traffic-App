@@ -15,19 +15,19 @@ def main():
 
     # Parsing the Incidents csv file to separate csv files for each year
     print('Parsing Incident .csv file...')
-    ParseIncidents('Traffic_incidents.csv')
+    ParseIncidents('Calgary-Traffic-App/Phase 1 - App/data/Traffic_Incidents.csv')
 
     # Writing data from Traffic csv files into MongoDB using WriteToDB class
     print('Done. Reading/writing Traffic .csv files to MongoDB...')
-    WriteToDB(collection, 'TrafficFlow2016_OpenData.csv', 'Traffic', 2016)
-    WriteToDB(collection, '2017_Traffic_Volume_Flow.csv', 'Traffic', 2017)
-    WriteToDB(collection, 'Traffic_Volumes_for_2018.csv', 'Traffic', 2018)
+    WriteToDB(collection, 'Calgary-Traffic-App/Phase 1 - App/data/TrafficFlow2016_OpenData.csv', 'Traffic', 2016)
+    WriteToDB(collection, 'Calgary-Traffic-App/Phase 1 - App/data/2017_Traffic_Volume_Flow.csv', 'Traffic', 2017)
+    WriteToDB(collection, 'Calgary-Traffic-App/Phase 1 - App/data/Traffic_Volumes_for_2018.csv', 'Traffic', 2018)
 
     # Writing data from Incident csv files into MongoDB using WriteToDB class
     print('Done. Reading/writing Incident .csv files to MongoDB...')
-    WriteToDB(collection, 'Traffic_Incidents_2016.csv', 'Incidents', 2016)
-    WriteToDB(collection, 'Traffic_Incidents_2017.csv', 'Incidents', 2017)
-    WriteToDB(collection, 'Traffic_Incidents_2018.csv', 'Incidents', 2018)
+    WriteToDB(collection, 'Calgary-Traffic-App/Phase 1 - App/data/Traffic_Incidents_2016.csv', 'Incidents', 2016)
+    WriteToDB(collection, 'Calgary-Traffic-App/Phase 1 - App/data/Traffic_Incidents_2017.csv', 'Incidents', 2017)
+    WriteToDB(collection, 'Calgary-Traffic-App/Phase 1 - App/data/Traffic_Incidents_2018.csv', 'Incidents', 2018)
     print('Done. Starting GUI...')
 
     # Running GUI

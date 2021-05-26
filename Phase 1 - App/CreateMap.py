@@ -110,4 +110,4 @@ class CreateMap:
         folium.Marker([lat, lon], popup=desc, tooltip=tool).add_to(m)
 
         # Creating map.html file
-        m.save('map.html')
+        m.save('Calgary-Traffic-App/Phase 1 - App/map.html')
